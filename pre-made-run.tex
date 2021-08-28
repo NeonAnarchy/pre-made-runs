@@ -1,0 +1,215 @@
+\documentclass{ShadowTeXSR5}
+
+
+%How you want to name your Book. The title will show up in the headers
+%Or on the alternative cover page.
+\title{My Rulebook}
+%Main author
+\author{TaCktiX}
+%List of artists, if available. Can leave empty.
+%\artists{Me, Myself \& I}
+%Cover artist, if available. Can leave empty.
+%\coverartist{Me, too}
+%Text Writers, if available. Can leave empty.
+\writers{/u/kajh}
+%Filename of the image you wish to be on the cover. It'll also show as an overlay in the headers. 
+%If no image is provided, the document will show an alternative (boring) cover page and not overlay anything on the headers.
+\splashpicture{SR5_Cover_Art.jpg}
+
+\begin{document}
+%You can use this to select your Language of choice. Currently only ngerman and english are supported.
+\selectlanguage{english}
+%This builds and prints the cover page, splash page and impressum.
+%Supported colors: black, blue, brown, green, grey, red, yellow
+\srmaketitle[black]
+%This builds the TOC.
+\tableofcontents
+
+%From here on, your content can start.
+
+\chapter{Pre-made Runs}
+
+Pre-made runs are ready to be GMd runs made by GMs for other GMs. They are like a D\&D module or adventure path. So detailed that a GM needs only read the run doc to GM a game without consulting anyone. The goal is to allow people to GM without having to put in the effort of designing their own runs. Each pre-made run is designed to be generic and can be run an infinite number of times without affecting a metaplot or lore of Shadowrun. GMs can make changes to the pre-made runs to add their own twists should they desire, but it's not necessary. However, please keep the title of the run the same as the original writer wrote.
+
+GM-ing a Pre-made run offers the same GMP as GMing any other run. Making a pre-made run awards 15 GMP to the writer as well as 3 GMP royalty, each time someone other than you GMs your run.
+
+Please submit your pre-made runs according to this template as a google doc. Send it to either a member of GM\&Lore.
+
+
+\section{Overview}
+\textbf{Name of Run:}\\
+\textbf{Author:}\\
+\textbf{Plot Summary:}\\
+\textbf{Setting:}\\
+\textbf{Threat Level:}\\
+\textbf{Content level:}\\
+\textbf{Theme:}\\
+\textbf{Duration: }\\
+\textbf{Rewards:}\\
+\textbf{Run Prompt:}\\
+\textbf{Meet Prompt:}\\
+
+\section{Cast}
+\textbf{The Johnson}\\
+\textbf{Motivations:}\\
+\textbf{Affiliation:}\\
+\textbf{Character Traits:}\\
+\textbf{Description:}
+
+\section{Other NPCs}
+\textbf{Motivations:}\\
+\textbf{Affiliation:}\\
+\textbf{Character Traits:}\\
+\textbf{Description:}\\
+
+\section{Scenes}
+\textbf{The Meet}\\
+\textbf{Location:}\\
+\textbf{Description:}\\
+\textbf{Goals:}\\
+\textbf{Complications:}
+
+\subsection{Scene 1}
+\textbf{Location:}\\
+\textbf{Description:}\\
+\textbf{Goals:}\\
+\textbf{Complications:}
+
+\subsection{Scene 2}
+\textbf{Location:}\\
+\textbf{Description:}\\
+\textbf{Goals:}\\
+\textbf{Complications:}\\
+
+\subsection{Scene 3}
+\textbf{Location:}\\
+\textbf{Description:}\\
+\textbf{Goals:}\\
+\textbf{Complications:}\\
+
+\section{Legwork}
+\subsection{Topic 1}
+\textbf{Related Skills:}\\
+\textbf{Results}\\
+\textbf{T1:}\\
+\textbf{T3:}\\
+\textbf{T6:}\\
+
+\subsection{Topic 2}
+\textbf{Related Skills:}\\
+\textbf{Results}\\
+\textbf{T1:}\\
+\textbf{T3:}\\
+\textbf{T6:}\\
+
+\subsection{Topic 3}
+\textbf{Related Skills:}\\
+\textbf{Results}\\
+\textbf{T1:}\\
+\textbf{T3:}\\
+\textbf{T6:}\\
+
+\chapter{Statblocks}
+%\section{Bad Guys}
+
+%\lipsum
+
+%\begin{blackbox}{Titel}
+%\centering\color{white}
+%\begin{srtable}{Xc}{Values & Dangers}
+%Value & Danger\\
+%Value2 & Danger2\\
+%Rick & Morty\\
+%\end{srtable}
+%\end{blackbox}
+
+
+\subsection{Bad Guy 1}
+
+Some text about this guy.
+
+\begin{tcolorbox}[
+colback=storyblack, 
+left=0mm, 
+right=0mm, 
+bottom=0mm, top=0mm, 
+width = \columnwidth, 
+arc=0mm, 
+outer arc=0mm, 
+colframe=storyblack, 
+]
+\centering
+
+
+\rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}  
+\arrayrulecolor{yellowtext}
+\color{white}\small
+\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}} X >{\setlength\hsize{0.7\hsize}} X}
+\toprule
+\belowrulesepcolor{black}
+\multicolumn{2}{l}{
+  \textbf{B \quad\; A \quad\; R \quad\; S \quad\; W \quad\; I \quad\; L \quad\; C \quad\; E \quad\; R}
+}\\
+\multicolumn{2}{l}{
+  \textbf{1 \quad\; 2 \quad\; 3 \quad\; 4 \quad\;\; 5 \quad\; 6 \quad\; 7 \quad\; 8 \quad\; 9 \quad\; 10}
+}\\
+\aboverulesepcolor{black}   
+\bottomrule
+Skills & Automatics (3), Pistols (3), Clubs (4), Athletics Group (2), Perception (3), Etiquette (2), Intimidation (3), Computers (2)\\
+Augmentations & Datajacks, chipjacks, skilljacks, minor bioware augmentations\\
+Spells/Complex Forms & Puppeteer, Static Veil, Resonance Veil, Resonance Spike, Search Historyl\\
+Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised clubs (str+2, Acc:4), Ruger Super Warhawk (w/ laser sight, 30 rounds ‐ standard ammo) \\
+Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
+\toprule
+\end{tabularx}
+
+\end{tcolorbox}
+
+% column break
+\vfill\eject
+\columnbreak
+
+\subsection{Bad Guy 2}
+
+Some text about this guy.
+
+\begin{tcolorbox}[
+colback=storyblack, 
+left=0mm, 
+right=0mm, 
+bottom=0mm, top=0mm, 
+width = \columnwidth, 
+arc=0mm, 
+outer arc=0mm, 
+colframe=storyblack, 
+]
+\centering
+
+
+\rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}  
+\arrayrulecolor{yellowtext}
+\color{white}\small
+\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}} X >{\setlength\hsize{0.7\hsize}} X}
+\toprule
+\belowrulesepcolor{black}
+\multicolumn{2}{l}{
+  \textbf{B \quad\; A \quad\; R \quad\; S \quad\; W \quad\; I \quad\; L \quad\; C \quad\; E \quad\; R}
+}\\
+\multicolumn{2}{l}{
+  \textbf{1 \quad\; 2 \quad\; 3 \quad\; 4 \quad\;\; 5 \quad\; 6 \quad\; 7 \quad\; 8 \quad\; 9 \quad\; 10}
+}\\
+\aboverulesepcolor{black}   
+\bottomrule
+Skills & Automatics (3), Pistols (3), Clubs (4), Athletics Group (2), Perception (3), Etiquette (2), Intimidation (3), Computers (2)\\
+Augmentations & Datajacks, chipjacks, skilljacks, minor bioware augmentations\\
+Spells/Complex Forms & Puppeteer, Static Veil, Resonance Veil, Resonance Spike, Search Historyl\\
+Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised clubs (str+2, Acc:4), Ruger Super Warhawk (w/ laser sight, 30 rounds ‐ standard ammo) \\
+Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
+\toprule
+\end{tabularx}
+
+\end{tcolorbox}
+
+
+
+\end{document}  
