@@ -7,8 +7,16 @@
   - An image folder; you can create that yourself. It's where you store any pictures you want to include in the document. The provided folder contains some template images.
   - The index_style.mst. Rename it to \<yourtexfilename\>.mst.
   - A *.tex file
-  
-  
+
+## Installation - NeonAnarchy
+I've attached a pre-made run .tex file, and used MikTeX to build it (document compilation using XeLaTeX).  We need to do two things:
+1) Fix statblocks to ensure we using tabs, multicolumns or equivalent instead of spacing; and
+2) Externalise the statblock formatting to a .cls file, so that we can maintain it as a file separate to the main distribution.
+
+Both (1) and (2) are optional, but would clean up this package.
+
+Enjoy!
+
   ## Initiation
   
   To get your rulebook started, copy this code into your *.tex file; it'll contain all the commands needed to start.
