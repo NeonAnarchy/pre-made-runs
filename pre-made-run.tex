@@ -109,25 +109,13 @@ Please submit your pre-made runs according to this template as a google doc. Sen
 \textbf{T3:}\\
 \textbf{T6:}\\
 
+
+% Statblocks for the bad guys
 \chapter{Statblocks}
-%\section{Bad Guys}
-
-%\lipsum
-
-%\begin{blackbox}{Titel}
-%\centering\color{white}
-%\begin{srtable}{Xc}{Values & Dangers}
-%Value & Danger\\
-%Value2 & Danger2\\
-%Rick & Morty\\
-%\end{srtable}
-%\end{blackbox}
-
-
 \subsection{Bad Guy 1}
-
 Some text about this guy.
 
+% Statblock-start
 \begin{tcolorbox}[
 colback=storyblack, 
 left=0mm, 
@@ -139,14 +127,13 @@ outer arc=0mm,
 colframe=storyblack, 
 ]
 \centering
-
-
-\rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}  
+\rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}
 \arrayrulecolor{yellowtext}
 \color{white}\small
 \begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}} X >{\setlength\hsize{0.7\hsize}} X}
 \toprule
 \belowrulesepcolor{black}
+% TODO - need to clean this up.  Using spacing, which is ooookay, but should be multicolumn or tabs or something that gives perfect alignment.
 \multicolumn{2}{l}{
   \textbf{B \quad\; A \quad\; R \quad\; S \quad\; W \quad\; I \quad\; L \quad\; C \quad\; E \quad\; R}
 }\\
@@ -162,8 +149,8 @@ Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised c
 Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
 \toprule
 \end{tabularx}
-
 \end{tcolorbox}
+% Statblock-end
 
 % column break
 \vfill\eject
