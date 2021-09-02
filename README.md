@@ -23,7 +23,7 @@ In the preamble:
 and in the document body:
 
 ```   
-    \input{NeonAnarchyTeXSR5Statblock.tex}
+    \input{NeonAnarchyTeXSR5.tex.tex}
 ```
 
 Enjoy!\
