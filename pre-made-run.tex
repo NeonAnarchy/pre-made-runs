@@ -162,6 +162,8 @@ Please submit your pre-made runs according to this template as a google doc. Sen
 \textbf{T3:}\\
 \textbf{T6:}\\
 
+\newcolumntype{S}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
 
 % Statblocks for the bad guys
 \chapter{Statblocks}
@@ -183,15 +185,22 @@ colframe=storyblack,
 \rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}
 \arrayrulecolor{yellowtext}
 \color{white}\small
-\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}} X >{\setlength\hsize{0.7\hsize}} X}
+\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}}X >{\setlength\hsize{0.7\hsize}}X}
 \toprule
 \belowrulesepcolor{black}
-% \lipsum[1] - need to clean this up.  Using spacing, which is ooookay, but should be multicolumn or tabs or something that gives perfect alignment.
-\multicolumn{2}{l}{
-    \textbf{B\quad\; A\quad\; R\quad\; S\quad\; W\quad\; I\quad\; L\quad\; C\quad\; E\quad\; M\quad Init.}
+\multicolumn{2}{l} {
+\renewcommand{\tabcolsep}{1pt}
+\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
+\textbf{B} & \textbf{A} & \textbf{R} & \textbf{S} & \textbf{W} & \textbf{I} & \textbf{L} & \textbf{C} & \textbf{E} & \textbf{M} & \textbf{Init.}
+\end{tabularx}
+\renewcommand{\tabcolsep}{6pt}
 }\\
-\multicolumn{2}{l}{
-    \textbf{5\quad\; 8\quad\; 6\quad\; 6\quad\;\; 4\quad\; 4\quad\; 5\quad\; 4\quad\; 6\quad\; 6\quad 11+3d6}
+\multicolumn{2}{l} {
+\renewcommand{\tabcolsep}{1pt}
+\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
+5 & 8 & 6 & 6 & 4 & 4 & 5 & 4 & 6 & 6 & 11+3d6
+\end{tabularx}
+\renewcommand{\tabcolsep}{6pt}
 }\\
 \aboverulesepcolor{black}   
 \bottomrule
@@ -210,9 +219,9 @@ Direction & These gangers will fight at the direction of their lieutenant, major
 \columnbreak
 
 \subsection{Bad Guy 2}
-
 Some text about this guy.
 
+% Statblock-start
 \begin{tcolorbox}[
 colback=storyblack, 
 left=0mm, 
@@ -224,19 +233,25 @@ outer arc=0mm,
 colframe=storyblack, 
 ]
 \centering
-
-
 \rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}  
 \arrayrulecolor{yellowtext}
 \color{white}\small
-\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}} X >{\setlength\hsize{0.7\hsize}} X}
+\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}}X >{\setlength\hsize{0.7\hsize}}X}
 \toprule
 \belowrulesepcolor{black}
-\multicolumn{2}{l}{
-    \textbf{B\quad\; A\quad\; R\quad\; S\quad\; W\quad\; I\quad\; L\quad\; C\quad\; E\quad\; M\quad Init.}
+\multicolumn{2}{l} {
+\renewcommand{\tabcolsep}{1pt}
+\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
+\textbf{B} & \textbf{A} & \textbf{R} & \textbf{S} & \textbf{W} & \textbf{I} & \textbf{L} & \textbf{C} & \textbf{E} & \textbf{M} & \textbf{Init.}
+\end{tabularx}
+\renewcommand{\tabcolsep}{6pt}
 }\\
-\multicolumn{2}{l}{
-    \textbf{5\quad\; 8\quad\; 6\quad\; 6\quad\;\; 4\quad\; 4\quad\; 5\quad\; 4\quad\; 6\quad\; 6\quad 11+3d6}
+\multicolumn{2}{l} {
+\renewcommand{\tabcolsep}{1pt}
+\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
+5(6) & 8(9) & 6 & 6(8) & 4 & 4 & 5 & 4 & 6 & 6 & 11+3d6
+\end{tabularx}
+\renewcommand{\tabcolsep}{6pt}
 }\\
 \aboverulesepcolor{black}   
 \bottomrule
@@ -247,9 +262,7 @@ Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised c
 Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
 \toprule
 \end{tabularx}
-
 \end{tcolorbox}
-
-
+% Statblock-end
 
 \end{document}  
