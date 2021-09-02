@@ -14,14 +14,19 @@ in the package a NeonAnarchy extension (NeonAnarchyTeXSR5Statblock.tex) which al
 build.  To use, just ensure that you have the lines:
 
 In the preamble:
-`   % xargs
-    \usepackage{listofitems}
-`
-and in the document body:
-`   \input{NeonAnarchyTeXSR5Statblock.tex}
-`
 
-Enjoy!
+```
+   % xargs
+   \usepackage{listofitems}
+```
+
+and in the document body:
+
+```   
+    \input{NeonAnarchyTeXSR5Statblock.tex}
+```
+
+Enjoy!\
 /u/kajh
 
   ## Initiation
