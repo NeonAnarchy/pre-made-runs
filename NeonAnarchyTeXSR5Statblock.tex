@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% NeonAnarchyTeXSR5Statblock.cls
+%%
+%% Author: /u/kajh
+%% September 2021
+%%
+%% ALL FONTS USED ARE LICENSED FOR NON-COMMERCIAL PURPOSES ONLY
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcolumntype{S}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+% Statblock
+\NewEnviron{statblock}[1]{
+    \setsepchar{, }
+    \readlist\args{#1}
+
+    % Statblock-start
+    \begin{tcolorbox}[
+        colback=storyblack,
+        left=0mm,
+        right=0mm,
+        bottom=0mm, top=0mm,
+        width = \columnwidth,
+        arc=0mm,
+        outer arc=0mm,
+        colframe=storyblack,
+    ]
+        \centering
+        \rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}
+        \arrayrulecolor{yellowtext}
+        \color{white}\small
+        \begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}}X >{\setlength\hsize{0.7\hsize}}X}
+            \toprule
+            \belowrulesepcolor{black}
+            \multicolumn{2}{l} {
+                \renewcommand{\tabcolsep}{1pt}
+                \begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
+                    \textbf{B} & \textbf{A} & \textbf{R} & \textbf{S} & \textbf{W} & \textbf{I} & \textbf{L} & \textbf{C} & \textbf{E} & \textbf{M} & \textbf{Init.}
+                \end{tabularx}
+                \renewcommand{\tabcolsep}{6pt}
+            }\\
+            \multicolumn{2}{l} {
+                \renewcommand{\tabcolsep}{1pt}
+                \begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
+                    \args[1] & \args[2] & \args[3] & \args[4] & \args[5] & \args[6] & \args[7] & \args[8] & \args[9] & \args[10] & \args[11]
+                \end{tabularx}
+                \renewcommand{\tabcolsep}{6pt}
+            }\\
+            \aboverulesepcolor{black}
+            \bottomrule
+
+            \BODY
+
+            \toprule
+        \end{tabularx}
+    \end{tcolorbox}
+    % Statblock-end
+}

@@ -19,6 +19,9 @@
 % lorem ipsum
 \usepackage{lipsum}
 
+% xargs
+\usepackage{listofitems}
+
 \begin{document}
 %You can use this to select your Language of choice. Currently only ngerman and english are supported.
 \selectlanguage{english}
@@ -29,6 +32,8 @@
 \tableofcontents
 
 %From here on, your content can start.
+
+\input{NeonAnarchyTeXSR5Statblock.tex}
 
 \chapter{Pre-made Runs}
 
@@ -162,56 +167,19 @@ Please submit your pre-made runs according to this template as a google doc. Sen
 \textbf{T3:}\\
 \textbf{T6:}\\
 
-\newcolumntype{S}{>{\centering\arraybackslash}X}
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}
-
 % Statblocks for the bad guys
 \chapter{Statblocks}
 \subsection{Bad Guy 1}
 Some text about this guy.
 
 % Statblock-start
-\begin{tcolorbox}[
-colback=storyblack, 
-left=0mm, 
-right=0mm, 
-bottom=0mm, top=0mm, 
-width = \columnwidth, 
-arc=0mm, 
-outer arc=0mm, 
-colframe=storyblack, 
-]
-\centering
-\rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}
-\arrayrulecolor{yellowtext}
-\color{white}\small
-\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}}X >{\setlength\hsize{0.7\hsize}}X}
-\toprule
-\belowrulesepcolor{black}
-\multicolumn{2}{l} {
-\renewcommand{\tabcolsep}{1pt}
-\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
-\textbf{B} & \textbf{A} & \textbf{R} & \textbf{S} & \textbf{W} & \textbf{I} & \textbf{L} & \textbf{C} & \textbf{E} & \textbf{M} & \textbf{Init.}
-\end{tabularx}
-\renewcommand{\tabcolsep}{6pt}
-}\\
-\multicolumn{2}{l} {
-\renewcommand{\tabcolsep}{1pt}
-\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
-5 & 8 & 6 & 6 & 4 & 4 & 5 & 4 & 6 & 6 & 11+3d6
-\end{tabularx}
-\renewcommand{\tabcolsep}{6pt}
-}\\
-\aboverulesepcolor{black}   
-\bottomrule
-Skills & Automatics (3), Pistols (3), Clubs (4), Athletics Group (2), Perception (3), Etiquette (2), Intimidation (3), Computers (2)\\
-Augmentations & Datajacks, chipjacks, skilljacks, minor bioware augmentations\\
-Spells/Complex Forms & Puppeteer, Static Veil, Resonance Veil, Resonance Spike, Search Historyl\\
-Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised clubs (str+2, Acc:4), Ruger Super Warhawk (w/ laser sight, 30 rounds ‐ standard ammo) \\
-Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
-\toprule
-\end{tabularx}
-\end{tcolorbox}
+\begin{statblock}{5, 8, 6, 6, 4, 4, 5, 4, 6, 6, 11+3d6}
+    Skills & Automatics (3), Pistols (3), Clubs (4), Athletics Group (2), Perception (3), Etiquette (2), Intimidation (3), Computers (2)\\
+    Augmentations & Datajacks, chipjacks, skilljacks, minor bioware augmentations\\
+    Spells/Complex Forms & Puppeteer, Static Veil, Resonance Veil, Resonance Spike, Search Historyl\\
+    Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised clubs (str+2, Acc:4), Ruger Super Warhawk (w/ laser sight, 30 rounds ‐ standard ammo) \\
+    Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
+\end{statblock}
 % Statblock-end
 
 % column break
@@ -222,47 +190,15 @@ Direction & These gangers will fight at the direction of their lieutenant, major
 Some text about this guy.
 
 % Statblock-start
-\begin{tcolorbox}[
-colback=storyblack, 
-left=0mm, 
-right=0mm, 
-bottom=0mm, top=0mm, 
-width = \columnwidth, 
-arc=0mm, 
-outer arc=0mm, 
-colframe=storyblack, 
-]
-\centering
-\rowcolors{1}{\ifnumless{\rownum}{2}{black}{storyblack}}{storyblack!80!white}  
-\arrayrulecolor{yellowtext}
-\color{white}\small
-\begin{tabularx}{\textwidth}{>{\setlength\hsize{.3\hsize}}X >{\setlength\hsize{0.7\hsize}}X}
-\toprule
-\belowrulesepcolor{black}
-\multicolumn{2}{l} {
-\renewcommand{\tabcolsep}{1pt}
-\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
-\textbf{B} & \textbf{A} & \textbf{R} & \textbf{S} & \textbf{W} & \textbf{I} & \textbf{L} & \textbf{C} & \textbf{E} & \textbf{M} & \textbf{Init.}
-\end{tabularx}
-\renewcommand{\tabcolsep}{6pt}
-}\\
-\multicolumn{2}{l} {
-\renewcommand{\tabcolsep}{1pt}
-\begin{tabularx}{0.9\textwidth}{@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}S@{}L@{}}
-5(6) & 8(9) & 6 & 6(8) & 4 & 4 & 5 & 4 & 6 & 6 & 11+3d6
-\end{tabularx}
-\renewcommand{\tabcolsep}{6pt}
-}\\
-\aboverulesepcolor{black}   
-\bottomrule
-Skills & Automatics (3), Pistols (3), Clubs (4), Athletics Group (2), Perception (3), Etiquette (2), Intimidation (3), Computers (2)\\
-Augmentations & Datajacks, chipjacks, skilljacks, minor bioware augmentations\\
-Spells/Complex Forms & Puppeteer, Static Veil, Resonance Veil, Resonance Spike, Search Historyl\\
-Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised clubs (str+2, Acc:4), Ruger Super Warhawk (w/ laser sight, 30 rounds ‐ standard ammo) \\
-Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
-\toprule
-\end{tabularx}
-\end{tcolorbox}
+\begin{statblock}{5(6), 8(9), 6, 6(8), 4, 4, 5, 4, 6, 6, 11+3d6}
+    Skills & Automatics (3), Pistols (3), Clubs (4), Athletics Group (2), Perception (3), Etiquette (2), Intimidation (3), Computers (2)\\
+    Augmentations & Datajacks, chipjacks, skilljacks, minor bioware augmentations\\
+    Spells/Complex Forms & Puppeteer, Static Veil, Resonance Veil, Resonance Spike, Search Historyl\\
+    Gear & Armor vest, PPP arms/legs, ballistic masks/helmet ‘fez’, improvised clubs (str+2, Acc:4), Ruger Super Warhawk (w/ laser sight, 30 rounds ‐ standard ammo) \\
+    Direction & These gangers will fight at the direction of their lieutenant, majordomo or other leader ‐ until that leader goes down or they decide it’s not worth their life. \\
+\end{statblock}
 % Statblock-end
+
+
 
 \end{document}  

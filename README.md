@@ -9,13 +9,20 @@
   - A *.tex file
 
 ## Installation - NeonAnarchy
-I've attached a pre-made run .tex file, and used MikTeX to build it (document compilation using XeLaTeX).  We need to do two things:
-1) Fix statblock attributes to ensure we using tabs, multicolumns or equivalent instead of spacing; and
-2) Externalise the statblock formatting to a .cls file, so that we can maintain it as a file separate to the main distribution.
+I've attached a pre-made run .tex file, and used MikTeX to build it (document compilation using XeLaTeX).  You'll find
+in the package a NeonAnarchy extension (NeonAnarchyTeXSR5Statblock.tex) which allows you to add macros outside the
+build.  To use, just ensure that you have the lines:
 
-Both (1) and (2) are optional, but would clean up this package.
+In the preamble:
+`   % xargs
+    \usepackage{listofitems}
+`
+and in the document body:
+`   \input{NeonAnarchyTeXSR5Statblock.tex}
+`
 
 Enjoy!
+/u/kajh
 
   ## Initiation
   
