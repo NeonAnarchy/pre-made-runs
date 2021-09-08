@@ -14,7 +14,9 @@
 \newcolumntype{S}{>{\centering\arraybackslash}X}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 
+%%%%%%%%%%%
 % Statblock
+%%%%%%%%%%%
 \NewEnviron{statblock}[1]{
     \setsepchar{, }
     \readlist\args{#1}
@@ -60,4 +62,23 @@
         \end{tabularx}
     \end{tcolorbox}
     % Statblock-end
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NAdeckercomment - fixed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NewEnviron{NAdeckercomment}[1]{
+    \def\commentauthor{#1}
+    \deckerfont
+    \small
+    \par
+    \begin{itemize}[
+    leftmargin=1.2em,
+    itemsep=-1ex,
+    label={\begin{tcolorbox}[valign=center, halign=center,hbox,boxsep=-3.7mm, boxrule=0mm,colback=black, square, circular arc] {\color{normalpage}\bfseries\textgreater}	\end{tcolorbox}}
+    ]
+    \item \BODY \\
+    \item #1
+    \end{itemize}
+    \par
 }
