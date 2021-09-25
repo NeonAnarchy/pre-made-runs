@@ -50,6 +50,9 @@ Enjoy!\
 %If no image is provided, the document will show an alternative (boring) cover page and not overlay anything on the headers.
 \splashpicture{Splash.jpg}
 
+% xargs
+\usepackage{listofitems}
+
 \begin{document}
 %You can use this to select your Language of choice. Currently only ngerman and english are supported.
 \selectlanguage{english}
@@ -60,7 +63,8 @@ Enjoy!\
 
 %From here on, your content can start.
 
-
+% import NeonAnarchy patches and updates.
+\input{NeonAnarchyTeXSR5.tex}
 
 \end{document}  
 ```
